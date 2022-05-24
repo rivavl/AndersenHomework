@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_margin">170dp</dimen>
+    <dimen name="card_view_dim">320dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="et_margin">30dp</dimen>
+</resources>
