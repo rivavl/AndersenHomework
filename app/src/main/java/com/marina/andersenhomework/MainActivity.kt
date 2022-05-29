@@ -1,9 +1,11 @@
 package com.marina.andersenhomework
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var imageView: ImageView
     private lateinit var editText: EditText
+    private lateinit var button: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,11 +42,15 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+        button.setOnClickListener {
+            startActivity(Intent(this, FlagsActivity::class.java))
+        }
     }
 
     private fun initializeView() {
         imageView = findViewById(R.id.image_view)
         editText = findViewById(R.id.edit_text)
+        button = findViewById(R.id.flags)
     }
 
     private fun loadImage(url: String, imageView: ImageView) {
@@ -57,7 +64,8 @@ class MainActivity : AppCompatActivity() {
                     isFirstResource: Boolean
                 ): Boolean {
                     if (URL_REGEX.toRegex().matches(url)) {
-                        Toast.makeText(this@MainActivity, "Loading error", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity, "Loading error", Toast.LENGTH_SHORT)
+                            .show()
                     }
                     return false
                 }
