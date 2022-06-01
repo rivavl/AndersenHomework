@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomClock">
+        <attr name="secondColor" format="color" />
+        <attr name="minuteColor" format="color" />
+        <attr name="hourColor" format="color" />
+
+        <attr name="secondSize" format="dimension" />
+        <attr name="minuteSize" format="dimension" />
+        <attr name="hourSize" format="dimension" />
+    </declare-styleable>
+
+    <attr name="customClockStyle" format="reference" />
+</resources>
