@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndersenHomework</string>
+    <string name="hint_et">https://picsum.photos/200</string>
+    <string name="image_desc">Image</string>
 </resources>
